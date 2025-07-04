@@ -436,10 +436,13 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, strong, em, label, input, button, td
 
 .gallery-slide img {
   width: 100%;
-  height: 160px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain; /* atau 'cover' jika anda mahu penuh ruang */
   display: block;
+  max-width: 300px;     /* had maksimum lebar gambar */
+  margin: 0 auto;       /* tengahkan gambar */
 }
+
 
 .gallery-prev,
 .gallery-next {
