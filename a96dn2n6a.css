@@ -150,37 +150,6 @@ h1, h2, p {
     font-size: 0.95rem;
   }
 
-  .countdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: nowrap;
-  margin-top: 10px;
-}
-
-.countdown-box {
-  width: 60px;
-  height: 65px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.countdown-number {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.countdown-label {
-  font-size: 0.75rem;
-  margin-top: 2px;
-}
 
 
   .footer {
@@ -436,13 +405,10 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, strong, em, label, input, button, td
 
 .gallery-slide img {
   width: 100%;
-  height: auto;
-  object-fit: contain; /* atau 'cover' jika anda mahu penuh ruang */
+  height: 200px;
+  object-fit: cover;
   display: block;
-  max-width: 300px;     /* had maksimum lebar gambar */
-  margin: 0 auto;       /* tengahkan gambar */
 }
-
 
 .gallery-prev,
 .gallery-next {
@@ -636,4 +602,38 @@ hr {
     right: auto;
     transform: translateX(-50%);
   }
+}
+
+
+
+  .countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+
+.countdown-box {
+  width: 60px;
+  height: 65px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.countdown-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.countdown-label {
+  font-size: 0.75rem;
+  margin-top: 2px;
 }
